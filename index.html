@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Youtube Loading Animation</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #hero {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column wrap;
+            background:#2a2c36;
+        }
+
+        #main {
+            width: 40%;
+            aspect-ratio: 16/9;
+            border-radius: 10px;
+            border: none;
+
+        }
+
+        #box {
+            width: 40%;
+            height: 20%;
+            margin-top: 2%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #textbox {
+            width: 65%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            margin-left: 5%;
+            flex-flow: column wrap;
+        }
+
+        #text1 {
+            width: 100%;
+            height: 10%;
+            border-radius: 10px;
+        }
+
+        #text2 {
+            width: 80%;
+            height: 10%;
+            border-radius: 10px;
+            margin-top: 5%;
+        }
+
+        #text3 {
+            width: 50%;
+            height: 10%;
+            border-radius: 10px;
+            margin-top: 5%;
+        }
+
+        #circle {
+            width: 25%;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+        }
+
+        .youtube {
+            background-image: linear-gradient(90deg,
+             #eee 4%, #eee 40%,#ddd 50%, #ddd 
+             55%, #eee 65%, #eee 100%);
+            background-size: 400%;
+            animation: youtube 1.5s infinite;
+        }
+
+        @keyframes youtube {
+            from {
+                background-position: 100%;
+            }
+
+            to {
+                background-position: 0%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="hero">
+        <div id="main" class="youtube">
+
+        </div>
+        <div id="box">
+            <div id="circle" class="youtube">
+
+            </div>
+            <div id="textbox">
+                <div id="text1" class="youtube">
+
+                </div>
+                <div id="text2" class="youtube">
+
+                </div>
+                <div id="text3" class="youtube">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
